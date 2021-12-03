@@ -1,0 +1,109 @@
+@import "base/extends";
+@import "base/listas";
+@import "components/header";
+@import "components/footer";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  
+  /*Main index.html*/
+  /*Main index.html*/
+  #main-index-grid {
+    display: grid;
+    grid-template-rows: 300px 250px 250px;
+    grid-template-columns: 400px 1fr;
+    gap: 10px;
+  }
+  
+  #imagen-main-catering,
+  #imagen-main-salones {
+    width: 400px;
+    height: 250px;
+  }
+  
+  #imagen-main-salones:hover {
+    border-top-color: white;
+    border-radius: 70px;
+  }
+  
+  #imagen-main-catering:hover {
+    border-top-color: white;
+    border-radius: 70px;
+  }
+  
+  #paragraph {
+    
+    text-align: center;
+    padding: 100px 70px;
+    @extend %tipografiaGeneral;
+  }
+  
+  #paragraph-2, #paragraph-3 {
+    @extend %tipografiaGeneral;
+    text-align: center;
+    padding-top: 80px;
+    
+  }
+  
+  .mapa-ubicacion {
+    width: 100%;
+  }
+  
+  /*tabla unicamente en precios.html*/
+  #tabla-precios {
+    background-color: white;
+    width: 50%;
+    border-radius: 1px solid black;
+  }
+  
+  /* parrafo e imagenes unicamente en salon.html*/
+  .imagenes-salon {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .paragraph-salon {
+    @extend %tipografiaGeneral;
+    border-style: solid;
+    border-color: teal;
+    margin: 15px;
+    border-radius: 1rem;
+  }
+  
+  /* parrafo e imagenes unicamente en catering.html*/
+  #main-catering {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .paragraph-catering {
+    @extend %tipografiaGeneral;
+  }
+  
+  #video-catering {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    padding-left: 1000px;
+  }
+  
+  /**  #video-fondo Estoy probado como poner el video de fondo unicamente en el header.
+      position: absolute;
+      bottom: 0px;
+      right: 0px;   
+      min-width: 100%;
+      min-height: 100%; 
+      width: auto; 
+       height: auto;
+      z-index: -1000;
+      overflow: hidde*/
